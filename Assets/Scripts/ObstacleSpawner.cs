@@ -1,13 +1,10 @@
 using System.Collections;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject obstaclePrefab;
     [SerializeField] private float obstacleSpawnTime = 1f;
-
-    private int obstaceleSpawned = 0;
 
     private void Start()
     {
@@ -16,11 +13,10 @@ public class ObstacleSpawner : MonoBehaviour
 
     IEnumerator SpawnObstacleRoutine()
     {
-        while (obstaceleSpawned < 5)
+        while (true)
         {
             yield return new WaitForSeconds(obstacleSpawnTime);
-            Instantiate(obstaclePrefab, transform.position, quaternion.identity);
-            obstaceleSpawned++;
+            Instantiate(obstaclePrefab, transform.position, Random.rotation);
         }
     }
 }
