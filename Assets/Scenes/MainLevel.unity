@@ -532,9 +532,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 4949882438533207012, guid: 231d05f8b970ccd438b33f3e8bf83490, type: 3}
-  - {fileID: 1500979616717310228, guid: ed4fecb9bfffe6c48b1eda7391429a85, type: 3}
-  - {fileID: 5051347685167107956, guid: f8a1c8cc22058a644a2ae74b9ccb9dbe, type: 3}
+  - {fileID: 8519540495954806225, guid: bec1bc6a7632357498e25e17abc8ed68, type: 3}
+  - {fileID: 3088142436199196292, guid: be04ffc42d8e9f74ba552ba5ced962b3, type: 3}
+  - {fileID: 3088142436199196292, guid: 32ce93e0c7443c24285dcbd1305da6f6, type: 3}
+  - {fileID: 3088142436199196292, guid: f840ed4b1e8b14b47a8ab9c733747806, type: 3}
+  - {fileID: 8402025036317426550, guid: 5dd4a50d4e2a88b42b84db959d06eb25, type: 3}
   obstacleSpawnTime: 3
   obstacleParent: {fileID: 571942708}
   spawnWidth: 4
@@ -705,7 +707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80dbd91deb723a248b91959116b85e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chunkPrefab: {fileID: 3765298359089443053, guid: 231bfb54a7ca5c74a8fa0c820addab24, type: 3}
+  chunkPrefab: {fileID: 4437325663932086182, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
   startingChunksAmount: 12
   chunkParent: {fileID: 142042882}
   chunkLength: 10
