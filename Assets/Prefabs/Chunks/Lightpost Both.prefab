@@ -52,65 +52,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light_Hanging_Pole_Furn (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -267793088845230817, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 905318242512786633, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6146541341861651165}
-    - targetCorrespondingSourceObject: {fileID: 905318242512786633, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 580046023636330885}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
---- !u!1 &2792963917217081014 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 905318242512786633, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
-  m_PrefabInstance: {fileID: 3049728353731015295}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &6146541341861651165
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2792963917217081014}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.51259375, y: 3.3530543, z: 0.38080692}
-  m_Center: {x: -0.013067007, y: 1.6765269, z: -0.034749985}
---- !u!65 &580046023636330885
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2792963917217081014}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.51259375, y: 1.329833, z: 2.140152}
-  m_Center: {x: -0.013067007, y: 2.6881375, z: 0.8449224}
 --- !u!4 &3281234403250240524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
@@ -130,15 +76,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767305778507742451, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.36094427
+      value: -0.084182955
       objectReference: {fileID: 0}
     - target: {fileID: 7767305778507742451, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.09
+      value: -3.2358508
       objectReference: {fileID: 0}
     - target: {fileID: 7767305778507742451, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.9750233
+      value: 4.0128336
       objectReference: {fileID: 0}
     - target: {fileID: 7767305778507742451, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
       propertyPath: m_LocalRotation.w
