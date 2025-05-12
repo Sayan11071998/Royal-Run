@@ -881,11 +881,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraController: {fileID: 1891524775}
   chunkPrefab: {fileID: 4437325663932086182, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
-  startingChunksAmount: 12
   chunkParent: {fileID: 142042882}
+  startingChunksAmount: 12
   chunkLength: 10
   moveSpeed: 8
   minMoveSpeed: 2
+  maxMoveSpeed: 20
+  minGravityZ: -22
+  maxGravityZ: -2
 --- !u!4 &688287551
 Transform:
   m_ObjectHideFlags: 0
