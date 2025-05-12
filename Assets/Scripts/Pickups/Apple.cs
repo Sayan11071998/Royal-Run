@@ -6,9 +6,9 @@ public class Apple : Pickup
 
     private LevelGenerator levelGenerator;
 
-    private void Start()
+    public void Init(LevelGenerator levelGenerator)
     {
-        levelGenerator = FindFirstObjectByType<LevelGenerator>();
+        this.levelGenerator = levelGenerator;
     }
 
     protected override void OnPickup()
