@@ -4980,17 +4980,17 @@ PrefabInstance:
       addedObject: {fileID: 7938095175038763203}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3388136647974101693, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 7556844675127305854}
-    - targetCorrespondingSourceObject: {fileID: 3388136647974101693, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4445619550001336489}
     - targetCorrespondingSourceObject: {fileID: 3388136647974101693, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5139192584573747600}
+      addedObject: {fileID: 2472377075645483042}
     - targetCorrespondingSourceObject: {fileID: 3388136647974101693, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2472377075645483042}
+      addedObject: {fileID: 7556844675127305854}
+    - targetCorrespondingSourceObject: {fileID: 3388136647974101693, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5139192584573747600}
   m_SourcePrefab: {fileID: 100100000, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
 --- !u!4 &2682374391784434690 stripped
 Transform:
@@ -5002,21 +5002,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3388136647974101693, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}
   m_PrefabInstance: {fileID: 780332116456609608}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7556844675127305854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2725064495440541173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04feab7bff887324b9c953bb980ea7d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionParticleSystem: {fileID: 3467494895655706939}
-  boulderSmashAudioSource: {fileID: 2472377075645483042}
-  shakeModifer: 10
 --- !u!136 &4445619550001336489
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5040,59 +5025,6 @@ CapsuleCollider:
   m_Height: 3.66
   m_Direction: 2
   m_Center: {x: 0, y: 0.25, z: -0.18}
---- !u!114 &5139192584573747600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2725064495440541173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImpulseDefinition:
-    ImpulseChannel: 1
-    ImpulseShape: 2
-    CustomImpulseShape:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    ImpulseDuration: 0.2
-    ImpulseType: 0
-    DissipationRate: 0.25
-    RawSignal: {fileID: 0}
-    AmplitudeGain: 1
-    FrequencyGain: 1
-    RepeatMode: 0
-    Randomize: 1
-    TimeEnvelope:
-      AttackShape:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      DecayShape:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      AttackTime: 0
-      SustainTime: 0.2
-      DecayTime: 0.7
-      ScaleWithImpact: 1
-      HoldForever: 0
-    ImpactRadius: 100
-    DirectionMode: 0
-    DissipationMode: 2
-    DissipationDistance: 100
-    PropagationSpeed: 343
-  DefaultVelocity: {x: 0.2, y: -1, z: 0.2}
 --- !u!82 &2472377075645483042
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5190,6 +5122,71 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7556844675127305854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2725064495440541173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd10ea0d5a69604d8f18a89d5b8a4c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5139192584573747600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2725064495440541173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0.2, y: -1, z: 0.2}
 --- !u!4 &5242885802757524046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4762049941528157446, guid: f5a57ad4d3d5ff042b61a9d6c9f8bb5d, type: 3}

@@ -735,11 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 8519540495954806225, guid: bec1bc6a7632357498e25e17abc8ed68, type: 3}
-  - {fileID: 3088142436199196292, guid: be04ffc42d8e9f74ba552ba5ced962b3, type: 3}
-  - {fileID: 3088142436199196292, guid: 32ce93e0c7443c24285dcbd1305da6f6, type: 3}
-  - {fileID: 3088142436199196292, guid: f840ed4b1e8b14b47a8ab9c733747806, type: 3}
-  - {fileID: 8402025036317426550, guid: 5dd4a50d4e2a88b42b84db959d06eb25, type: 3}
+  - {fileID: 2725064495440541173, guid: d8aba4e6587e5524a89d8f3060547e1c, type: 3}
   obstacleSpawnTime: 3
   obstacleParent: {fileID: 571942708}
   spawnWidth: 4
@@ -1034,6 +1030,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &680330671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680330672}
+  m_Layer: 0
+  m_Name: Fog Volumes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680330672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680330671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 715639053}
+  - {fileID: 1505055755}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &688287549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1136,7 @@ GameObject:
   - component: {fileID: 715639052}
   - component: {fileID: 715639051}
   m_Layer: 0
-  m_Name: For Volume
+  m_Name: For Volume 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5921,12 +5950,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715639050}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680330672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
@@ -6460,7 +6489,7 @@ GameObject:
   - component: {fileID: 1505055754}
   - component: {fileID: 1505055753}
   m_Layer: 0
-  m_Name: For Volume (1)
+  m_Name: For Volume 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11274,12 +11303,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505055752}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -27, z: 14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680330672}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1778000330
 GameObject:
@@ -11419,6 +11448,7 @@ GameObject:
   - component: {fileID: 1891524774}
   - component: {fileID: 1891524776}
   - component: {fileID: 1891524777}
+  - component: {fileID: 1891524778}
   - component: {fileID: 1891524775}
   m_Layer: 0
   m_Name: Cinemachine Camera
@@ -11563,6 +11593,29 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
+--- !u!114 &1891524778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891524772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &2059887453
 GameObject:
   m_ObjectHideFlags: 0
@@ -16411,5 +16464,4 @@ SceneRoots:
   - {fileID: 516075514}
   - {fileID: 645280692}
   - {fileID: 1383952499}
-  - {fileID: 715639053}
-  - {fileID: 1505055755}
+  - {fileID: 680330672}
