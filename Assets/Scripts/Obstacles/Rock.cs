@@ -5,22 +5,17 @@ public class Rock : MonoBehaviour
 {
     [SerializeField] private ParticleSystem collisionParticleSystem;
     [SerializeField] private AudioSource boulderSmashAudioSource;
+
     [SerializeField] private float shakeModifier = 10f;
     [SerializeField] private float collisionCooldown = 1f;
 
     private CinemachineImpulseSource cinemachineImpulseSource;
 
-    private float collisionTimer = 0f;
+    private float collisionTimer = 1f;
 
-    private void Awake()
-    {
-        cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
-    }
+    private void Awake() => cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
 
-    private void Update()
-    {
-        collisionTimer += Time.deltaTime;
-    }
+    private void Update() => collisionTimer += Time.deltaTime;
 
     private void OnCollisionEnter(Collision other)
     {

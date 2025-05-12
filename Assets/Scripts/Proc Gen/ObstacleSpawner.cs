@@ -4,13 +4,20 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] obstaclePrefabs;
+
     [SerializeField] private float obstacleSpawnTime = 1f;
+    [SerializeField] private float minObstacleSpawnTime = 0.2f;
     [SerializeField] private Transform obstacleParent;
     [SerializeField] private float spawnWidth = 4f;
 
-    private void Start()
+    private void Start() => StartCoroutine(SpawnObstacleRoutine());
+
+    public void DecreaseObstacleSpawnTime(float amount)
     {
-        StartCoroutine(SpawnObstacleRoutine());
+        obstacleSpawnTime -= amount;
+
+        if (obstacleSpawnTime <= minObstacleSpawnTime)
+            obstacleSpawnTime = minObstacleSpawnTime;
     }
 
     IEnumerator SpawnObstacleRoutine()

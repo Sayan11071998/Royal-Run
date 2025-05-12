@@ -25,15 +25,9 @@ public class LevelGenerator : MonoBehaviour
     private List<GameObject> chunks = new List<GameObject>();
     private int chunksSpawned = 0;
 
-    private void Start()
-    {
-        SpawnStartingChunks();
-    }
+    private void Start() => SpawnStartingChunks();
 
-    private void Update()
-    {
-        MoveChunks();
-    }
+    private void Update() => MoveChunks();
 
     public void ChangeChunkMoveSpeed(float speedAmount)
     {
@@ -55,9 +49,7 @@ public class LevelGenerator : MonoBehaviour
     private void SpawnStartingChunks()
     {
         for (int i = 0; i < startingChunksAmount; i++)
-        {
             SpawnChunk();
-        }
     }
 
     private void SpawnChunk()
@@ -76,6 +68,7 @@ public class LevelGenerator : MonoBehaviour
     private GameObject ChooseChunkToSpawn()
     {
         GameObject chunkToSpawn;
+
         if (chunksSpawned % checkpointChunkInterval == 0 && chunksSpawned != 0)
             chunkToSpawn = checkpointChunkPrefab;
         else

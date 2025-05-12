@@ -10,20 +10,11 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Rigidbody rigidBody;
 
-    private void Awake()
-    {
-        rigidBody = GetComponent<Rigidbody>();
-    }
+    private void Awake() => rigidBody = GetComponent<Rigidbody>();
 
-    private void FixedUpdate()
-    {
-        HandleMovement();
-    }
+    private void FixedUpdate() => HandleMovement();
 
-    public void Move(InputAction.CallbackContext context)
-    {
-        movement = context.ReadValue<Vector2>();
-    }
+    public void Move(InputAction.CallbackContext context) => movement = context.ReadValue<Vector2>();
 
     private void HandleMovement()
     {

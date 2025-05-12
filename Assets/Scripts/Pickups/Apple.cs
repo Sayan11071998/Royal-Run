@@ -6,13 +6,7 @@ public class Apple : Pickup
 
     private LevelGenerator levelGenerator;
 
-    public void Init(LevelGenerator levelGenerator)
-    {
-        this.levelGenerator = levelGenerator;
-    }
+    public void Init(LevelGenerator levelGenerator) => this.levelGenerator = levelGenerator;
 
-    protected override void OnPickup()
-    {
-        levelGenerator.ChangeChunkMoveSpeed(adjustChangeMoveSpeedAmount);
-    }
+    protected override void OnPickup() => levelGenerator.ChangeChunkMoveSpeed(adjustChangeMoveSpeedAmount);
 }

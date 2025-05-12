@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerCollisionHandler : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+
     [SerializeField] private float collisionCooldown = 1f;
     [SerializeField] private float adjustChangeMoveSpeedAmount = -2f;
 
@@ -12,15 +13,9 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private float cooldownTimer = 0f;
 
-    private void Start()
-    {
-        levelGenerator = FindFirstObjectByType<LevelGenerator>();
-    }
+    private void Start() => levelGenerator = FindFirstObjectByType<LevelGenerator>();
 
-    private void Update()
-    {
-        cooldownTimer += Time.deltaTime;
-    }
+    private void Update() => cooldownTimer += Time.deltaTime;
 
     private void OnCollisionEnter(Collision other)
     {

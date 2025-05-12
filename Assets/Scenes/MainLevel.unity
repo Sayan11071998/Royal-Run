@@ -742,6 +742,7 @@ MonoBehaviour:
   - {fileID: 8402025036317426550, guid: 5dd4a50d4e2a88b42b84db959d06eb25, type: 3}
   - {fileID: 2725064495440541173, guid: d8aba4e6587e5524a89d8f3060547e1c, type: 3}
   obstacleSpawnTime: 3
+  minObstacleSpawnTime: 0.2
   obstacleParent: {fileID: 571942708}
   spawnWidth: 4
 --- !u!4 &571942708
@@ -1109,11 +1110,11 @@ MonoBehaviour:
   startingChunksAmount: 12
   checkpointChunkInterval: 8
   chunkLength: 10
-  moveSpeed: 8
+  moveSpeed: 6
   minMoveSpeed: 2
   maxMoveSpeed: 20
   minGravityZ: -22
-  maxGravityZ: -2
+  maxGravityZ: -8
 --- !u!4 &688287551
 Transform:
   m_ObjectHideFlags: 0
@@ -1478,8 +1479,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
-      minScalar: 8
+      scalar: 60
+      minScalar: 30
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2061,7 +2062,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1000
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6045,8 +6046,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 126.51221, y: -33.256012}
-  m_SizeDelta: {x: 220.9922, y: 54.217}
+  m_AnchoredPosition: {x: 120, y: -43}
+  m_SizeDelta: {x: 225, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &966047505
 MonoBehaviour:
@@ -6070,8 +6071,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0.0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6095,8 +6096,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6181,8 +6182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -125.53027, y: -36.330322}
-  m_SizeDelta: {x: 237.0083, y: 60.3649}
+  m_AnchoredPosition: {x: -120, y: -43}
+  m_SizeDelta: {x: 225, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1053311734
 MonoBehaviour:
@@ -6204,10 +6205,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0000
+  m_text: 000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6231,8 +6232,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6247,7 +6248,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -6481,7 +6482,7 @@ MonoBehaviour:
   playerController: {fileID: 594635700}
   timeText: {fileID: 966047505}
   gameOverText: {fileID: 1252563638}
-  startTime: 60
+  startTime: 30
 --- !u!1 &1505055752
 GameObject:
   m_ObjectHideFlags: 0

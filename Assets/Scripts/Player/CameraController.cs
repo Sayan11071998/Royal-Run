@@ -13,10 +13,7 @@ public class CameraController : MonoBehaviour
 
     private CinemachineCamera cinemachineCamera;
 
-    private void Awake()
-    {
-        cinemachineCamera = GetComponent<CinemachineCamera>();
-    }
+    private void Awake() => cinemachineCamera = GetComponent<CinemachineCamera>();
 
     public void ChangeCameraFOV(float speedAmount)
     {

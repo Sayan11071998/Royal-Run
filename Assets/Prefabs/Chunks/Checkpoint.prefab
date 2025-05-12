@@ -346,6 +346,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 7723406028530042423, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
+      propertyPath: coinSpawnChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723406028530042423, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
+      propertyPath: appleSpawnChance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7767305778507742451, guid: 8f62c88024afe3245a672aa4c4f252be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -429,6 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e17207650dd40d4390d4685202dbd39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkpointTimeExtension: 5
 --- !u!65 &3280057746381609850
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -6,10 +6,7 @@ public abstract class Pickup : MonoBehaviour
 
     private const string playerString = "Player";
 
-    private void Update()
-    {
-        transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
-    }
+    private void Update() => transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
 
     private void OnTriggerEnter(Collider other)
     {

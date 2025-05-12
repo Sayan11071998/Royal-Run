@@ -6,13 +6,7 @@ public class Coin : Pickup
 
     private ScoreManager scoreManager;
 
-    public void Init(ScoreManager scoreManager)
-    {
-        this.scoreManager = scoreManager;
-    }
+    public void Init(ScoreManager scoreManager) => this.scoreManager = scoreManager;
 
-    protected override void OnPickup()
-    {
-        scoreManager.IncreaseScore(scoreAmount);
-    }
+    protected override void OnPickup() => scoreManager.IncreaseScore(scoreAmount);
 }
