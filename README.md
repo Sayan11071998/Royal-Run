@@ -86,9 +86,9 @@ The project showcases how thoughtful system design, polished visual presentation
 
 ---
 ## Play Link
+https://sayannandi.itch.io/royal-run
 
 [![Watch the video](https://img.youtube.com/vi/RREZRg64WdI/maxresdefault.jpg)](https://youtu.be/RREZRg64WdI)
-
 ### [Gameplay Video](https://youtu.be/RREZRg64WdI)
 
 ![Image](https://github.com/user-attachments/assets/d2727da0-7bc9-4ad5-a805-ef06c55fad7d)
